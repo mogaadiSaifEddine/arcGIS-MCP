@@ -1,0 +1,35 @@
+{
+  "name": "arcgis-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server exposing ArcGIS Online / Enterprise REST APIs to AI clients",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types test/*.test.ts",
+    "inspector": "npx @modelcontextprotocol/inspector"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@esri/arcgis-rest-feature-service": "^4.11.0",
+    "@esri/arcgis-rest-geocoding": "^4.11.0",
+    "@esri/arcgis-rest-portal": "^4.11.0",
+    "@esri/arcgis-rest-request": "^4.11.0",
+    "@esri/arcgis-rest-routing": "^4.11.0",
+    "@modelcontextprotocol/server": "^2.4.0",
+    "mcp-handler": "^2.4.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "typescript": "^5.9.3"
+  }
+}
